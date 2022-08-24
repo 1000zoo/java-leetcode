@@ -6,7 +6,7 @@ package dynamic_programming;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PascalsTriangle {
+public class PascalsTriangle1 {
     private int getCombination(int n, int r){
         double temp = 1;
         for(int i = 2; i <= n; i++){
