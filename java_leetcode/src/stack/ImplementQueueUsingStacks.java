@@ -32,6 +32,7 @@ public class ImplementQueueUsingStacks {
             }
         }
 
+        // 문제조건 : 모든 pop 과 peek 은 유효함 => NullPointerException 이 존재하는 경우는 무시함
         public int pop() {
             return st2.pop();
         }
@@ -45,22 +46,6 @@ public class ImplementQueueUsingStacks {
         }
     }
 
-    public static class Solution2 {
-
-        public Solution2() {}
-
-        public void push(int x) {
-        }
-        public int pop() {
-            return 1;
-        }
-        public int peek() {
-            return 1;
-        }
-        public boolean empty() {
-            return false;
-        }
-    }
 
     public static void main(String[] args) {
         Solution1 queue = new Solution1();
