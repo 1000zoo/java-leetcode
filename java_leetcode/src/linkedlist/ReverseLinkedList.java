@@ -102,7 +102,19 @@ public class ReverseLinkedList {
         }
     }
     //-----------------------------------------------------------------------------
-
+    //Runtime: 0 ms, faster than 100.00% of Java online submissions for Reverse Linked List.
+    //Memory Usage: 43.6 MB, less than 8.30% of Java online submissions for Reverse Linked List.
+    public static ListNode solution3(ListNode head) {
+        ListNode answer = null;
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = answer;
+            answer = curr;
+            curr = next;
+        }
+        return answer;
+    }
 
     public static void main(String[] args) {
         ArrayList<Integer> a = new ArrayList<>();
