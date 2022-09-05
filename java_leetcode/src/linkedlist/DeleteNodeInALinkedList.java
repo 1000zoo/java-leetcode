@@ -6,14 +6,6 @@ package linkedlist;
 import java.util.List;
 
 public class DeleteNodeInALinkedList {
-    static public class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-    }
 
     //Runtime: 0 ms, faster than 100.00% of Java online submissions for Delete Node in a Linked List.
     //Memory Usage: 43.9 MB, less than 48.01% of Java online submissions for Delete Node in a Linked List.

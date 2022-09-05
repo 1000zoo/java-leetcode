@@ -8,45 +8,6 @@ import java.util.List;
 import java.util.Stack;
 
 public class PalindromeLinkedList {
-    static public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {}
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
-    //------------------------------------------------------------------------
-    //util
-    public static ListNode toListNode(List<Integer> list) {
-        ListNode listNode = new ListNode();
-        ListNode curr = listNode;
-
-        for (Integer i : list) {
-            curr.next = new ListNode(i);
-            curr = curr.next;
-        }
-        return listNode.next;
-    }
-
-    public static void print(ListNode listNode) {
-        ListNode dummy = listNode;
-
-        while (dummy != null) {
-            System.out.println(dummy.val);
-            dummy = dummy.next;
-        }
-    }
-    //------------------------------------------------------------------------
-
     //------------------------------------------------------------------------
     //Runtime: 126 ms, faster than 5.20% of Java online submissions for Palindrome Linked List.
     //Memory Usage: 120.4 MB, less than 5.03% of Java online submissions for Palindrome Linked List.
@@ -137,12 +98,6 @@ public class PalindromeLinkedList {
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<>();
-        arr.add(1);
-        arr.add(1);
-        arr.add(2);
-        arr.add(1);
-        ListNode ln = toListNode(arr);
-        solution3(ln);
+
     }
 }

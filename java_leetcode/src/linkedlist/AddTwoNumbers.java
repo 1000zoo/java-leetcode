@@ -4,21 +4,6 @@
 package linkedlist;
 
 public class AddTwoNumbers {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(){}
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     //Runtime: 4 ms, faster than 37.39% of Java online submissions for Add Two Numbers.
     //Memory Usage: 47.3 MB, less than 78.94% of Java online submissions for Add Two Numbers.
     public static ListNode solution1(ListNode l1, ListNode l2) {

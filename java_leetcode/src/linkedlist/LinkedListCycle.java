@@ -6,15 +6,6 @@ package linkedlist;
 import java.util.HashSet;
 
 public class LinkedListCycle {
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-    }
-
     //운이 좋을 때
     //Runtime: 0 ms, faster than 100.00% of Java online submissions for Linked List Cycle.
     //Memory Usage: 46.1 MB, less than 39.24% of Java online submissions for Linked List Cycle.

@@ -6,15 +6,6 @@ package linkedlist;
 import java.util.HashSet;
 
 public class IntersectionOfTwoLinkedLists {
-    static public class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-    }
-
     //Runtime: 9 ms, faster than 25.75% of Java online submissions for Intersection of Two Linked Lists.
     //Memory Usage: 54.8 MB, less than 73.21% of Java online submissions for Intersection of Two Linked Lists.
     //Time : O(A + B)
