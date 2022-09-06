@@ -54,6 +54,27 @@ public class MergeNodesInBetweenZeros {
         return answer.next;
     }
 
+    //https://leetcode.com/problems/merge-nodes-in-between-zeros/discuss/2535117/C%2B%2B(100-faster-and-best-approach)-oror-O(N)-Time-complexity-oror-Got-through-once
+    //Runtime: 7 ms, faster than 94.19% of Java online submissions for Merge Nodes in Between Zeros.
+    //Memory Usage: 80.2 MB, less than 92.10% of Java online submissions for Merge Nodes in Between Zeros.
+    public static ListNode solution3(ListNode head) {
+        ListNode answer = new ListNode();
+        ListNode answerCurr = answer;
+        ListNode curr = head.next;
+        int mergeSum = 0;
+
+        while (curr != null) {
+            mergeSum += curr.val;
+            if (curr.val == 0) {
+                answerCurr.next = new ListNode(mergeSum);
+                answerCurr = answerCurr.next;
+                mergeSum = 0;
+            }
+            curr = curr.next;
+        }
+        return answer.next;
+    }
+
     public static void main(String[] args) {
         ArrayList<Integer> arl = new ArrayList<>();
         arl.add(0);
