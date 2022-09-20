@@ -136,6 +136,23 @@ public class MergeTwoBinaryTrees {
     //==============================================================================================================
 
 
+    // solution2
+    // recursive
+    //https://leetcode.com/problems/merge-two-binary-trees/solution/
+    //Runtime: 1 ms, faster than 81.64% of Java online submissions for Merge Two Binary Trees.
+    //Memory Usage: 50.6 MB, less than 64.73% of Java online submissions for Merge Two Binary Trees.
+    public static TreeNode solution2(TreeNode root1, TreeNode root2) {
+        if (root1 == null) {
+            return root2;
+        }
+        if (root2 == null) {
+            return root1;
+        }
+        return new TreeNode(
+                root1.val + root2.val, solution2(root1.left, root2.left), solution2(root1.right, root2.right)
+        );
+    }
+
 
     public static void main(String[] args) {
         ArrayList<Integer> al1 = new ArrayList<>();
