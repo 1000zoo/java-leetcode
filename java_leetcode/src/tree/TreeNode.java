@@ -51,19 +51,45 @@ public class TreeNode {
             }
         }
     }
+    public String toString() {
+        if (this == null) {
+            return null;
+        }
+        StringBuilder sb = new StringBuilder();
+        TreeNode curr;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(this);
+        sb.append(this.val).append(", ");
+
+        while (!queue.isEmpty()) {
+            curr = queue.poll();
+
+            if (curr.left != null && curr.right != null) {
+                sb.append(curr.left.val).append(", ");
+                sb.append(curr.right.val).append(", ");
+                queue.add(curr.left);
+                queue.add(curr.right);
+            } else if (curr.left != null) {
+                sb.append(curr.left.val).append(", ");
+                sb.append("null, ");
+                queue.add(curr.left);
+            } else if (curr.right != null) {
+                sb.append("null, ");
+                sb.append(curr.right.val).append(", ");
+                queue.add(curr.right);
+            } else {
+                sb.append("null, null, ");
+            }
+        }
+        sb.setLength(sb.length() - 2);
+        return sb.toString();
+    }
 
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>(){{
             add(1);
-            add(2);
-            add(3);
-            add(null);
-            add(null);
-            add(null);
-            add(1);
-            add(1);
-            add(1);
         }};
         TreeNode root = new TreeNode(list);
+        System.out.println(root);
     }
 }
