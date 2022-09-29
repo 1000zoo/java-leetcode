@@ -4,7 +4,8 @@
 /*
 0653 문제를 잘 못 이해한 풀이
 두 원소의 합이 k 가 되도록 모든 원소를 짝지을 수 있다면 true 아니면 false 로 이해함
-원래 문제 풀이는 TwoSumIsK
+원래 문제는 원소 중 한 쌍의 합이 k 가 되면 true 아니면 false
+원래 문제 풀이는 TwoSumIsK.java
  */
 
 package tree;
