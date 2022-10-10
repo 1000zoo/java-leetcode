@@ -84,4 +84,20 @@ public class TreeNode {
         sb.setLength(sb.length() - 2);
         return sb.toString();
     }
+
+    public List<Integer> toList() {
+        ArrayList<Integer> list = new ArrayList<>();
+        toList(this, list);
+        return list;
+    }
+
+    public static void toList(TreeNode node, List<Integer> list) {
+        if (node.left != null) {
+            toList(node.left, list);
+        }
+        list.add(node.val);
+        if (node.right != null) {
+            toList(node.right, list);
+        }
+    }
 }
