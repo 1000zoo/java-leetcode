@@ -39,8 +39,4 @@ public class MergeTwoSortedLists {
         }
         return answer.next;
     }
-
-    public static void main(String[] args) {
-
-    }
 }

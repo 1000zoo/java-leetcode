@@ -28,13 +28,4 @@ public class ConvertBinaryNumberInLinkedListToInteger {
         }
         return sum;
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> arl = new ArrayList<>();
-        arl.add(1);
-        arl.add(1);
-        arl.add(1);
-        ListNode node = new ListNode(arl);
-        System.out.println(solution2(node));
-    }
 }

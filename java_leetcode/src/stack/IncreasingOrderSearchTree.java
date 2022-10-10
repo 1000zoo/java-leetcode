@@ -53,18 +53,4 @@ public class IncreasingOrderSearchTree {
         ans.right = new TreeNode(curr.val);
         return dummy.right;
     }
-
-
-    public static void main(String[] args) {
-        TreeNode n1 = new TreeNode(1);
-        TreeNode n2 = new TreeNode(2, n1, null);
-        TreeNode n4 = new TreeNode(4);
-        TreeNode n3 = new TreeNode(3, n2, n4);
-        TreeNode n7 = new TreeNode(7);
-        TreeNode n9 = new TreeNode(9);
-        TreeNode n8 = new TreeNode(8, n7, n9);
-        TreeNode n6 = new TreeNode(6, null, n8);
-        TreeNode n5 = new TreeNode(5, n3, n6);
-        solution1(n5);
-    }
 }

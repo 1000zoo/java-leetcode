@@ -29,8 +29,4 @@ public class DeleteNodeInALinkedList {
         node.next = nextNode.next;
         nextNode.next = null;
     }
-
-    public static void main(String[] args) {
-
-    }
 }

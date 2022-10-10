@@ -31,11 +31,4 @@ public class InvertBinaryTree {
         node.left = node.right;
         node.right = temp;
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> al = new ArrayList<>();
-        Integer[] list = new Integer[]{4, 2};
-        Collections.addAll(al, list);
-        invertTree(new TreeNode(al));
-    }
 }

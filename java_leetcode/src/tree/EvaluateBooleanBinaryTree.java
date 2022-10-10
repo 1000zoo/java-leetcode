@@ -88,13 +88,4 @@ public class EvaluateBooleanBinaryTree {
             return solution2(root.left) && solution2(root.right);
         }
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> al = new ArrayList<>();
-//        Integer[] arr = new Integer[]{3, 2, 2, 2, 2, 3, 2, 0, 0, 0, 1, 1, 2, 1, 1, null, null, null, null, null, null, null, null, null, null, 3, 2, null, null, null, null, 2, 3, 0, 0, 1, 1, 0, 3, null, null, null, null, null, null, null, null, null, null, 3, 0, 3, 3, null, null, 0, 0, 1, 0, null, null, null, null, null, null, null, null};
-        Integer[] arr = new Integer[]{3, 3, 2, 0, 0, 3, 2, null, null, null, null, 1, 3, 1, 1, null, null, 2, 1, null, null, null, null, 1, 1};
-        Collections.addAll(al, arr);
-        TreeNode root = new TreeNode(al);
-        solution1(root);
-    }
 }

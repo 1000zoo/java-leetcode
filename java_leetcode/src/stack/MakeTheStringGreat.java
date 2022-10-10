@@ -6,12 +6,6 @@ package stack;
 import java.util.Stack;
 
 public class MakeTheStringGreat {
-    public static void main(String[] args) {
-        System.out.println(solution1("asSAdf"));
-        System.out.println(solution2("asSAdf"));
-        System.out.println(solution3("asSAdf"));
-    }
-
     //Runtime: 5 ms, faster than 69.66% of Java online submissions for Make The String Great.
     //Memory Usage: 43 MB, less than 54.75% of Java online submissions for Make The String Great.
     public static String solution1(String s) {

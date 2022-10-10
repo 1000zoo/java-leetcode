@@ -53,13 +53,4 @@ public class AllTwoSumIsK {
         }
         return count;
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> a = new ArrayList<>();
-        Integer[] al = new Integer[]{2,1,3};
-        Collections.addAll(a, al);
-        TreeNode root = new TreeNode(a);
-        solution1(root, 3);
-    }
-
 }

@@ -94,21 +94,4 @@ public class AddTwoNumbers {
         }
         return answer.next;
     }
-
-    public static void main(String[] args) {
-        ListNode n1 = new ListNode(3);
-        ListNode n2 = new ListNode(4, n1);
-        ListNode n3 = new ListNode(2, n2);
-
-        ListNode n4 = new ListNode(4);
-        ListNode n5 = new ListNode(6, n4);
-        ListNode n6 = new ListNode(5, n5);
-
-        ListNode n = solution2(n3, n6);
-        ListNode curr = n;
-        while (curr != null) {
-            System.out.println(curr.val);
-            curr = curr.next;
-        }
-    }
 }

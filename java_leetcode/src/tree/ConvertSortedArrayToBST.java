@@ -29,11 +29,4 @@ public class ConvertSortedArrayToBST {
         }
         return res;
     }
-
-
-    public static void main(String[] args) {
-        int[] arr = {-10, -3, 0, 5, 9};
-        TreeNode root = solution1(arr);
-        System.out.println(root);
-    }
 }

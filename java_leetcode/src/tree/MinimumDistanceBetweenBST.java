@@ -32,13 +32,4 @@ public class MinimumDistanceBetweenBST {
             toList(node.right, list);
         }
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> al = new ArrayList<>();
-        Collections.addAll(al, 500,250,981,10,377,637,1024,1,27,269,499,577,777,989,2000);
-        TreeNode root = new TreeNode(al);
-        ArrayList<Integer> k = new ArrayList<>();
-        toList(root, k);
-        System.out.println(k);
-    }
 }

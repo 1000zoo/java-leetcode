@@ -32,12 +32,4 @@ public class SumOfBinaryNumbers {
         return sum;
     }
     //==============================================================================================================
-
-    public static void main(String[] args) {
-        ArrayList<Integer> al1 = new ArrayList<>();
-        Integer[] arr1 = new Integer[]{1, 0, 1, 0, 1, 0, 1};
-        Collections.addAll(al1, arr1);
-        TreeNode root = new TreeNode(al1);
-        System.out.println(sumRootToLeaf(root));
-    }
 }

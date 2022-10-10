@@ -63,11 +63,4 @@ public class BinaryTreePreorderTraversal {
 
         return ans;
     }
-
-    public static void main(String[] args) {
-        TreeNode n3 = new TreeNode(3, null, null);
-        TreeNode n2 = new TreeNode(2, n3, null);
-        TreeNode n1 = new TreeNode(1, null, n2);
-        solution1(n1);
-    }
 }

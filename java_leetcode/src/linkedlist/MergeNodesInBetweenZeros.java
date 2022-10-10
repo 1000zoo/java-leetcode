@@ -74,18 +74,4 @@ public class MergeNodesInBetweenZeros {
         }
         return answer.next;
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> arl = new ArrayList<>();
-        arl.add(0);
-        arl.add(1);
-        arl.add(2);
-        arl.add(0);
-        arl.add(3);
-        arl.add(4);
-        arl.add(0);
-        ListNode n = new ListNode(arl);
-        n = n.next;
-        System.out.println(solution2(n));
-    }
 }

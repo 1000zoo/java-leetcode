@@ -52,8 +52,4 @@ public class RemoveDuplicatedFromSortedList {
         }
         return dummy.next;
     }
-
-    public static void main(String[] args) {
-
-    }
 }

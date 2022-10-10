@@ -53,20 +53,4 @@ public class MiddleOfTheLinkedList {
         }
         return curr;
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> arl = new ArrayList<>();
-        arl.add(1);
-        arl.add(2);
-        arl.add(3);
-        arl.add(4);
-        arl.add(5);
-        arl.add(6);
-        ListNode ln = new ListNode(arl);
-        ln = ln.next;
-        System.out.println(ln);
-        ListNode nn = solution2(ln);
-        System.out.println(nn);
-    }
-
 }

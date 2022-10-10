@@ -50,8 +50,4 @@ public class RemoveLinkedListElements {
         }
         return dummy.next;
     }
-
-    public static void main(String[] args) {
-
-    }
 }

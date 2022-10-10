@@ -84,12 +84,4 @@ public class TreeNode {
         sb.setLength(sb.length() - 2);
         return sb.toString();
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(){{
-            add(1);
-        }};
-        TreeNode root = new TreeNode(list);
-        System.out.println(root);
-    }
 }

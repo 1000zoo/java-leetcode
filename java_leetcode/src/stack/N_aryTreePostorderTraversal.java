@@ -80,7 +80,4 @@ public class N_aryTreePostorderTraversal {
 
         return ans;
     }
-
-    public static void main(String[] args) {
-    }
 }

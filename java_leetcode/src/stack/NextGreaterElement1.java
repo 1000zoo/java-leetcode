@@ -53,14 +53,4 @@ public class NextGreaterElement1 {
         }
         return ans;
     }
-
-    public static void main(String[] args) {
-        int[] num1 = {4,2};
-        int[] num2 = {4,1,2,3,5};
-        int[] ans = solution2(num1, num2);
-        for (int n : ans) {
-            System.out.println(n);
-        }
-    }
-
 }

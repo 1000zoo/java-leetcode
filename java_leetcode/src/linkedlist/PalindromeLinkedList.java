@@ -96,8 +96,4 @@ public class PalindromeLinkedList {
         }
         return true;
     }
-
-    public static void main(String[] args) {
-
-    }
 }

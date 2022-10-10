@@ -28,9 +28,4 @@ public class RemoveAllAdjacentDuplicatesInString {
 
         return ans.toString();
     }
-
-    public static void main(String[] args) {
-        String s = "asddsadf";
-        System.out.println(solution1(s));
-    }
 }

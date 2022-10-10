@@ -40,13 +40,4 @@ public class UniValueBinaryTree {
                 (root.val == root.right.val && solution2(root.right)));
         return left_correct && right_correct;
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> i = new ArrayList<>();
-        Integer[] k = {1, 1, 1, 2, 1};
-        Collections.addAll(i, k);
-        TreeNode n = new TreeNode(i);
-        System.out.println(n);
-        solution1(n);
-    }
 }

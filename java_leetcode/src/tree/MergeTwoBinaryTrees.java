@@ -152,16 +152,4 @@ public class MergeTwoBinaryTrees {
                 root1.val + root2.val, solution2(root1.left, root2.left), solution2(root1.right, root2.right)
         );
     }
-
-
-    public static void main(String[] args) {
-        ArrayList<Integer> al1 = new ArrayList<>();
-        ArrayList<Integer> al2 = new ArrayList<>();
-        Integer[] l1 = new Integer[]{1, 3, 2, 5};
-        Integer[] l2 = new Integer[]{2, 1, 3, null, 4, null, 7};
-        Collections.addAll(al1, l1);
-        Collections.addAll(al2, l2);
-
-        solution1(new TreeNode(al1), new TreeNode(al2));
-    }
 }

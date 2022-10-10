@@ -35,22 +35,4 @@ public class RangeSumOfBST {
         }
         return sum;
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(){{
-            add(10);
-            add(5);
-            add(15);
-            add(3);
-            add(7);
-            add(13);
-            add(18);
-            add(1);
-            add(null);
-            add(6);
-        }};
-        TreeNode root = new TreeNode(list);
-        rangeSumBST(root, 6, 10);
-
-    }
 }

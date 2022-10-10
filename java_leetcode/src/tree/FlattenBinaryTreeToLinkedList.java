@@ -60,12 +60,4 @@ public class FlattenBinaryTreeToLinkedList {
             curr.right = temp;
         }
     }
-
-    public static void main(String[] args) {
-        TreeNode n3 = new TreeNode(3);
-        TreeNode n4 = new TreeNode(4, n3, null);
-        TreeNode n1 = new TreeNode(1);
-        TreeNode n2 = new TreeNode(2, n1, n4);
-        solution1(n2);
-    }
 }

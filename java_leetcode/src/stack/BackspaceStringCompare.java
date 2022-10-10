@@ -73,9 +73,4 @@ public class BackspaceStringCompare {
         }
         return idx;
     }
-
-
-    public static void main(String[] args) {
-        System.out.println(solution3("##qq#", "###asdf"));
-    }
 }

@@ -75,8 +75,4 @@ public class ReverseLinkedList {
         }
         return answer;
     }
-
-    public static void main(String[] args) {
-
-    }
 }

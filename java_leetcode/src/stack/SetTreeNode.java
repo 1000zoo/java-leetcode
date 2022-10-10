@@ -101,19 +101,4 @@ public class SetTreeNode {
         }
         return null;
     }
-
-    public static void test() {
-        List<Integer> list = new ArrayList<>();
-        Integer[] li = {5,null,null,4};
-//        Integer[] li = {5,null,3,6,2,4,null,8,1,null,null,null,null,7,9};
-        list = Arrays.stream(li).toList();
-        System.out.println(list);
-        TreeNode n = setTreeNode(list);
-        n.draw();
-    }
-
-    public static void main(String[] args) {
-        test();
-    }
-
 }

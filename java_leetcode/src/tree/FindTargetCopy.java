@@ -62,21 +62,4 @@ public class FindTargetCopy {
         }
         return null;
     }
-
-
-        public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>() {{
-            add(7);
-            add(4);
-            add(3);
-            add(null);
-            add(null);
-            add(6);
-            add(19);
-        }};
-        TreeNode original = new TreeNode(list);
-        TreeNode clone = new TreeNode(list);
-        TreeNode target = original.right;
-        getTargetCopy(original, clone, target);
-    }
 }
