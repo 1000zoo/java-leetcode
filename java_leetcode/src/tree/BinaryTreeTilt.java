@@ -46,11 +46,4 @@ public class BinaryTreeTilt {
         root.val = Math.abs(leftSum - rightSum);
         return temp + leftSum + rightSum;
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> al = new ArrayList<>();
-        Collections.addAll(al, 21, 7, 14, 1, 1, 2, 2, 3, 3);
-        TreeNode root = new TreeNode(al);
-        findTilt(root);
-    }
 }
