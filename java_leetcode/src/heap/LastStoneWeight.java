@@ -1,3 +1,6 @@
+//https://leetcode.com/problems/last-stone-weight/
+//2022-10-24
+
 package heap;
 
 import java.util.*;
