@@ -6,6 +6,9 @@ package heap;
 import java.util.*;
 
 public class SortCharactersByFrequency {
+
+    //Runtime: 26 ms, faster than 76.66% of Java online submissions for Sort Characters By Frequency.
+    //Memory Usage: 48.8 MB, less than 66.61% of Java online submissions for Sort Characters By Frequency.
     public String frequencySort(String s) {
         Map<Character, Integer> map = new HashMap<>();
         for (char c : s.toCharArray()) {
