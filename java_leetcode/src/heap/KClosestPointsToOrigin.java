@@ -7,7 +7,24 @@ import java.util.*;
 
 public class KClosestPointsToOrigin {
 
-    //내일 다시
+    //solution1
+    //pq 의 정렬 기준을 변경
+    //Runtime: 49 ms, faster than 71.03% of Java online submissions for K Closest Points to Origin.
+    //Memory Usage: 50.6 MB, less than 92.03% of Java online submissions for K Closest Points to Origin.
+    public int[][] kClosest(int[][] points, int k) {
+        int[][] answer = new int[k][2];
+
+        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(this::getDistance));
+        for (int[] point : points) {
+            pq.offer(point);
+        }
+
+        int[][] res = new int[k][2];
+        while (k > 0) {
+            res[--k] = pq.poll();
+        }
+        return res;
+    }
 
 
 
