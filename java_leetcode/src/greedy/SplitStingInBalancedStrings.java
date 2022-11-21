@@ -1,3 +1,6 @@
+//https://leetcode.com/problems/split-a-string-in-balanced-strings/
+//2022-11-21
+
 package greedy;
 
 public class SplitStingInBalancedStrings {
