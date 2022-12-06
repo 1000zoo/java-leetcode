@@ -8,17 +8,15 @@ import java.util.*;
 public class BaseballGame {
 
     private final Stack<Integer> record = new Stack<>();
-    //Runtime 10 ms 9.87%
-    //Memory 45.6 MB 5.44%
+
+    //Runtime 8 ms 18.84%
+    //Memory 42.5 MB 25.18%
+
     public int calPoints(String[] operations) {
         for (String op : operations) {
-            if (isNum(op)) {
-                record.push(Integer.parseInt(op));
-            } else {
-                operator(op);
-            }
+            operator(op);
         }
-        return getSum();
+        return record.stream().mapToInt(Integer::intValue).sum();
     }
 
     private void operator(String s) {
@@ -32,20 +30,7 @@ public class BaseballGame {
                 record.push(n1);
                 record.push(n1 + n2);
             }
+            default -> record.push(Integer.parseInt(s));
         }
     }
-
-    private boolean isNum(String s) {
-        try {
-            Integer.parseInt(s);
-        } catch (NumberFormatException n) {
-            return false;
-        }
-        return true;
-    }
-
-    private int getSum() {
-        return record.stream().mapToInt(Integer::intValue).sum();
-    }
-
 }
