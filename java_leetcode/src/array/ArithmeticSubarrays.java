@@ -6,6 +6,9 @@ package array;
 import java.util.*;
 
 public class ArithmeticSubarrays {
+
+    //Runtime 28 ms 60.83%
+    //Memory 54.7 MB 24.2%
     public List<Boolean> checkArithmeticSubarrays(int[] nums, int[] l, int[] r) {
         List<Boolean> answer = new ArrayList<>();
 
