@@ -22,6 +22,10 @@ public class FindPositiveIntegerSolution {
         }
     }
 
+    //Runtime: 5ms
+    //Beats 29.31%of users with Java
+    //Memory: 40.35MB
+    //Beats 43.97%of users with Java
     public List<List<Integer>> findSolution(CustomFunction customfunction, int z) {
         List<List<Integer>> answer = new ArrayList<>();
 
