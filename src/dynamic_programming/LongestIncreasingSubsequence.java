@@ -7,6 +7,7 @@ import java.util.*;
 
 public class LongestIncreasingSubsequence {
 
+    // 41ms Beats 54.39%
     public int lengthOfLIS(int[] nums) {
         int[] dp = new int[nums.length];
         Arrays.fill(dp, 1);
