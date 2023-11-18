@@ -7,6 +7,7 @@ import java.util.*;
 
 public class MostBeautifulItemForEachQuery {
 
+    //34 ms Beats 94.62%
     public int[] maximumBeauty(int[][] items, int[] queries) {
         int[] answer = new int[queries.length];
         Arrays.sort(items, (i1, i2) -> i1[0] == i2[0] ? i1[1] - i2[1] : i1[0] - i2[0]);
@@ -39,7 +40,7 @@ public class MostBeautifulItemForEachQuery {
         int right = array.length - 1;
 
         while (left < right) {
-            int mid = (left + right + 1) >> 1;
+            int mid = (left + right + 1) / 2;
 
             if (array[mid] <= target) {
                 left = mid;
