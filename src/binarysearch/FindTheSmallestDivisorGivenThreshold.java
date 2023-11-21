@@ -39,4 +39,13 @@ public class FindTheSmallestDivisorGivenThreshold {
         }
         return sum;
     }
+
+    //Runtime: 7 ms Beats 92.97%
+    private long getSumFaster(int[] nums, int divisor) {
+        long sum = 0;
+        for (int num : nums) {
+            sum += (divisor + num - 1) / divisor;
+        }
+        return sum;
+    }
 }
