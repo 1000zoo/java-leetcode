@@ -6,6 +6,8 @@ package dynamic_programming;
 import java.util.*;
 
 public class UniquePaths {
+
+    //Runtime: 1ms Beats 9.59%
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];
 
