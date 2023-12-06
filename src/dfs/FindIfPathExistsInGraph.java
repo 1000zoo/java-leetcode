@@ -10,7 +10,7 @@ public class FindIfPathExistsInGraph {
     private Map<Integer, List<Integer>> graph;
 
     //시간초과
-    //bfs, graph 코드 참고
+    //bfs 참고
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         graph = new HashMap<>();
 
@@ -30,15 +30,13 @@ public class FindIfPathExistsInGraph {
             return true;
         }
 
-        boolean answer = false;
-
         for (int next : graph.get(curr)) {
             if (visited.contains(next)) continue;
             visited.add(next);
-            answer = dfs(next, destination, visited) || answer;
+            if (dfs(next, destination, visited)) return true;
             visited.remove(next);
         }
 
-        return answer;
+        return false;
     }
 }
