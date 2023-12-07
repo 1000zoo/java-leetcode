@@ -15,8 +15,6 @@ public class FindModeInBST {
         dfs(root);
         List<Integer> list = new ArrayList<>();
 
-
-
         int max = -1;
         for (int key : map.keySet()) {
             if (max == map.get(key)) {
