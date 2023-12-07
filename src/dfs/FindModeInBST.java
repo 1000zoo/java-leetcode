@@ -32,7 +32,7 @@ public class FindModeInBST {
     private void dfs(TreeNode root) {
         if (root == null) return;
         map.put(root.val, map.getOrDefault(root.val, 0) + 1);
-        if (root.left != null) dfs(root.left);
-        if (root.right != null) dfs(root.right);
+        dfs(root.left);
+        dfs(root.right);
     }
 }
